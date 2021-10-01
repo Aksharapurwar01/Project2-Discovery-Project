@@ -1,0 +1,301 @@
+html,
+body {
+
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.icon {
+    width: 200px; /* does not scale*/
+    margin-left: 1rem;   /*related to foot size of root element*/
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(336deg) brightness(200%) contrast(150%);
+}
+
+.flex-item-right  figure img{
+   justify-content: center;
+   padding-left: 10px;
+}
+
+
+
+.navbar {
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 70px;
+
+
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    
+
+}
+
+.world-title {
+    font-family: messina-sans;
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 1rem;
+    line-height: 1.1;
+}
+
+article {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+p {
+    color: #777;
+}
+
+.c-burger__line {
+    height: 0px;
+    background-color: #fff;
+    transform-origin: right;
+}
+
+.text-uppercase {
+    color: white;
+}
+
+.list-unstyled .foot {
+    color: white;
+}
+
+.list-unstyled .foot:hover {
+    text-decoration: underline;
+    transform: scaleX(0);
+    
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.navbar-brand {
+    width: 35%;
+}
+
+.cl {
+    color: #fff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;  /*padding included in width and height*/
+}
+
+
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #161f1e;
+}
+
+.footer>* {    /* this*/
+    flex: 1 100%;
+}
+
+.l-footer {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.r-footer {
+    display: flex;
+    flex-flow: row wrap; /*row , forced to be in one line*/ 
+}
+
+.r-footer>* {  
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a {
+    color: #999;
+}
+
+.h-box {
+    column-count: 2;
+
+}
+
+.b-footer {
+    text-align: left;
+    color: #999;
+    padding-top: 50px;
+}
+
+.l-footer p {
+
+    color: #999;
+}
+
+@media screen and (min-width: 600px) {
+    .r-footer>* {
+        flex: 1;
+    }
+
+
+    .l-footer {
+        flex: 1 0px;
+    }
+
+    .r-footer {
+        flex: 2 0px;
+    }
+}
+
+.head {
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: .75rem;
+    letter-spacing: -.01em;
+}
+
+.b-footer p {
+    color: hsla(0, 0%, 100%, .75);
+
+}
+
+/*flex*/
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.flex-item-right {
+    flex: 25%;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+
+/*Gallery*/
+
+.galleries-hero__inner {
+    position: relative;
+    z-index: 3;
+}
+
+.o-row {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: aliceblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+    flex: 33.3%;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+ 
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .row1 {
+        flex-direction: column;
+    }
+    .column{
+        flex: 100%;
+    }
+}
+
+.galleries-item__thumb img {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+}
+
+.galleries-item__thumb {
+    padding-top: 65%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.column article {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.galleries-item__title {
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    padding: 3rem 1.5rem;
+    margin-bottom: 0;
+    font: 1.5em sans-serif;
+    text-decoration: none;
+}
