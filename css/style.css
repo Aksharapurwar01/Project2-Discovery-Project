@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+
 html,
 body {
 
@@ -13,34 +16,23 @@ body {
     width: 200px; /* does not scale*/
     margin-left: 1rem;   /*related to foot size of root element*/
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(336deg) brightness(200%) contrast(150%);
+    height:2rem;
 }
 
 .flex-item-right  figure img{
    justify-content: center;
-   padding-left: 10px;
+   
+   width: 100%;
+   height: 100%;
 }
 
-
-
-.navbar {
-    height: 150px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-    margin-bottom: 70px;
-
-
-}
-
-img {
-    width: 300px;
-    height: 200px;
-    
-
+.flex-container{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .world-title {
-    font-family: messina-sans;
+    font-family: 'Martel Sans', sans-serif;
     font-size: .85rem;
     text-transform: uppercase;
     color: #fff;
@@ -85,9 +77,7 @@ p {
 }
 
 
-.navbar-brand {
-    width: 35%;
-}
+
 
 .cl {
     color: #fff;
@@ -166,7 +156,8 @@ h2 {
     color: #999;
 }
 
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 425px) {
     .r-footer>* {
         flex: 1;
     }
@@ -174,6 +165,20 @@ h2 {
 
     .l-footer {
         flex: 1 0px;
+    }
+
+    .r-footer {
+        flex: 1 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .r-footer>* {
+        flex: 1;
+    }
+
+
+    .l-footer {
+        flex: 2 0px;
     }
 
     .r-footer {
@@ -219,8 +224,10 @@ h2 {
 /*Gallery*/
 
 .galleries-hero__inner {
+    padding-top: 50px;
     position: relative;
     z-index: 3;
+    
 }
 
 .o-row {
@@ -228,7 +235,18 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    color: aliceblue;
+    justify-content: center;
+}
+
+@media screen and (min-width: 500px){
+.o-h1 {
+    font-size: calc(20.66667px + 3.06667vw);
+}
+}
+
+.o-h1, .o-h2, .o-h3, h1, h2, h3, h4 {
+    font-family: 'Spectral', serif;
+    font-weight: 200;
 }
 
 * {
@@ -254,6 +272,11 @@ h2 {
     .column {
       flex: 50%;
     }
+    .flex-item-right {
+        flex: 50%;
+     
+     }
+
   }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -264,6 +287,22 @@ h2 {
     .column{
         flex: 100%;
     }
+
+    .flex-container{
+        flex-direction: column;
+    }
+    .partrow1{
+        flex-direction: column;
+    }
+
+    .colum{
+        flex:100%
+    }
+    
+.flex-item-right {
+   flex: 100%;
+
+}
 }
 
 .galleries-item__thumb img {
@@ -299,3 +338,140 @@ h2 {
     font: 1.5em sans-serif;
     text-decoration: none;
 }
+ /*video*/ /*Home*/
+ .video-container {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+   
+  }
+
+  
+  @media screen and (min-width: 300px) {
+    .video-container {
+        height: 100vh;
+       
+       
+      }
+  
+
+  }
+
+
+  
+  video {
+    object-fit: cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+  
+  .video-container:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(black, .2);
+    z-index: 1;
+  }
+
+  .c-img-txt-2__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    z-index: 1;
+}
+
+.c-img-txt-2 {
+    position: relative;
+}
+
+.c-content__title {
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    transform-origin: left;
+}
+
+
+
+.c-content__text{
+    transform-origin: left;
+
+}
+
+.partrow1{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.colum{
+    flex: 50%;
+  
+}
+
+.column2{
+    flex: 100%;
+   
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.o-row1 {
+    margin-top: 50px;
+    max-width: 80rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.o-content-max-l {
+    max-width: 30rem;
+}
+
+.o-content-max-l .o-h2 {
+    line-height: 1.3;
+    margin-bottom: 2.5rem;
+    font-size: 36px;
+}
+
+/*image marquee*/
+marquee {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px ;
+}
+
+.slide_img {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+
