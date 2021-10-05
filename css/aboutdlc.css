@@ -33,3 +33,73 @@ figure{
 
     margin-left: 5%;
 }
+
+.mission-heading{
+    font-family: 'Spectral', serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.missionflex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.right-mission{
+    flex: 50%;
+    margin-top: 10%;
+   
+   
+}
+
+.dlc_img {
+    width: 35vw;
+    height: 80vh;    
+    width: 40vw;
+    margin-bottom: 10%;
+  
+    top: 10%;
+    height: 105vh;
+}
+
+.left-mission{
+    flex: 50%;
+}
+
+@media screen and (max-width: 800px){
+    .missionflex{
+        flex-direction: row;
+    }
+
+    .right-mission{
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .left-mission{
+        flex: 100%;
+        flex-direction: row;
+    }
+} 
+
+.p_dlc{
+    font-family: Montserrat;
+    color: rgb(121, 117, 117);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Discovery Design css*/
+
+.img-right-discovery{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
