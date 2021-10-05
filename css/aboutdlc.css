@@ -1,4 +1,5 @@
-.o-row-small{
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+.o-row-small {
     width: 59rem;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -9,18 +10,18 @@
     position: relative;
 }
 
-.boat{
-   
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-       
-    
+.boat {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
 }
 
-figure{
+figure {
     margin: 0;
     padding: 0;
     display: block;
@@ -34,42 +35,53 @@ figure{
     margin-left: 5%;
 }
 
-.mission-heading{
+.mission-heading {
     font-family: 'Spectral', serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: lighter;
     margin-left: 20%;
     margin-right: 20%;
 }
 
-.missionflex{
+.missionflex {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.right-mission{
+.right-mission {
     flex: 50%;
     margin-top: 10%;
-   
-   
+
+
+}
+
+.aboutdlcp{
+
+    font-family: 'Spectral', serif;
+
 }
 
 .dlc_img {
-    width: 35vw;
-    height: 80vh;    
+
+    height: 80vh;
     width: 40vw;
     margin-bottom: 10%;
-  
+
     top: 10%;
     height: 105vh;
 }
 
-.left-mission{
+.inner-img-mission {
+    width: 100%;
+    height: 100%;
+}
+
+.left-mission {
     flex: 50%;
 }
 
-@media screen and (max-width: 800px){
+/*@media screen and (max-width: 800px){
     .missionflex{
         flex-direction: row;
     }
@@ -83,9 +95,35 @@ figure{
         flex: 100%;
         flex-direction: row;
     }
-} 
+}*/
 
-.p_dlc{
+@media screen and (max-width: 440px) {
+    .missionflex {
+        flex-direction: row;
+    }
+
+    .right-mission {
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .left-mission {
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .dlc_img {
+
+        height: 80vh;
+        width: 100%;
+        margin-bottom: 10%;
+
+        top: 10%;
+
+    }
+}
+
+.p_dlc {
     font-family: Montserrat;
     color: rgb(121, 117, 117);
     font-size: 1.2rem;
@@ -98,8 +136,65 @@ figure{
 
 /* Discovery Design css*/
 
-.img-right-discovery{
+.img-left-discovery {
     display: flex;
     flex-wrap: wrap;
+}
+
+.img-left-discovery-inner {
+
+    flex: 50%;
+}
+
+.right-content-design {
+    flex: 50%;
+}
+
+@media screen and (max-width: 440px) {
+
+    .img-left-discovery {
+        flex-direction: row;
+    }
+
+    .img-left-discovery-inner{
+        flex: 100%;
+        flex-direction: row;
+    }
     
+    .right-content-design {
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .img-design-right{
+        display: none;
+
+    }
+
+    .discover , .your-world{
+        font-size: 2rem ;
+    }
+
+    
+
+}
+
+
+
+.p_dlc1 {
+    font-family: Montserrat;
+    color: rgb(121, 117, 117);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.img-design-right {
+    padding-top: 30%;
+    width: 80%;
+    z-index: 200;
+    margin-left: 10%;
 }
