@@ -186,3 +186,16 @@
     align-items: center;
     margin-left: 50px;
 }
+
+.column3{
+
+    flex: 33.3%;
+
+}
+@media screen and (max-width: 800px){
+.column3{
+    flex-direction: row;
+    flex: 100%;
+}
+
+}
