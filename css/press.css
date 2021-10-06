@@ -1,0 +1,22 @@
+.whole-mid-press{
+    display: grid;
+    grid-template-rows: 1fr ;
+   
+    
+}
+.slides{
+    position: relative;
+}
+
+.inner-slides{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 4.5rem 8vw;
+   
+}
+
+@media (min-width: 700px){
+.inner-slides{
+    grid-template-columns: repeat(2,1fr);
+}
+}
