@@ -240,3 +240,45 @@ figure {
         height: 50% ;
     }
 }
+
+.section4_dlc{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    background-color: #fff;
+    color: #000;
+}
+
+.dlc {
+    font-family: 'Spectral', serif;
+    font-size: 2.2rem;
+    position: relative;
+    top: 45%;
+    left: 10%;
+}
+
+.left-arrow,.right-arrow{
+    margin-left: 20px;
+    height:70%;
+    width: 8%;
+    cursor: pointer;
+}
+.arrows{
+    display: flex;
+    margin-top: 4.5rem;
+    margin-left: 15rem;
+    justify-content: flex-end;
+   
+}
+
+@media screen and (max-width: 440px) {
+
+    .section4_dlc{
+        
+        width: 100vw;
+        height: 40vh;
+        
+    }
+
+}
+
