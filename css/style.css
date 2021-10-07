@@ -19,7 +19,8 @@ body {
     font-weight: 400;
 }
 .navbar li a.nav-link:hover, .navbar .nav-item.active a.nav-link{
-    border-bottom: 1px solid white;
+  text-decoration:  1px underline;
+  text-underline-offset: 4px;
 
 }
 

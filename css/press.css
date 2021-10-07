@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
 .whole-mid-press{
     display: grid;
     grid-template-rows: 1fr ;
    
     
 }
-.slides{
+.slides {
+    margin-left: auto;
     position: relative;
+    max-width: 80%;
+    margin-right: auto;
+    margin-bottom: 10%;
 }
 
 .inner-slides{
@@ -20,3 +25,46 @@
     grid-template-columns: repeat(2,1fr);
 }
 }
+.press-item {
+    transform-origin: left;
+}
+
+.press-item__title{
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: 100;
+    font-size: 2rem;
+   
+  
+}
+
+.press-heading{
+    line-height: 1.4;
+    font-family: 'Spectral', serif;
+    padding-bottom: 4%;
+    margin-left: 11%;
+    padding-top: 5%;
+    
+}
+
+.c-btn--margin {
+    margin-top: 3rem;
+}
+
+.c-press-item__label{
+    color: black;
+    font-weight: 500;
+    font: 2.5rem ;
+}
+
+.c-btn {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 100px 100x;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10%;
+    width: 180px;
+    height:50px;
+  }
