@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+
 .o-row-small {
     width: 59rem;
     margin-top: 10%;
@@ -59,7 +60,7 @@ figure {
 
 }
 
-.aboutdlcp{
+.aboutdlcp {
 
     font-family: 'Spectral', serif;
 
@@ -129,12 +130,13 @@ figure {
 .p_dlc {
     font-family: Montserrat;
     color: rgb(121, 117, 117);
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.8rem;
     text-align: left;
     justify-content: center;
     margin-left: 20%;
     margin-right: 20%;
+    display: flex;
 }
 
 /* Discovery Design css*/
@@ -159,26 +161,27 @@ figure {
         flex-direction: row;
     }
 
-    .img-left-discovery-inner{
+    .img-left-discovery-inner {
         flex: 100%;
         flex-direction: row;
     }
-    
+
     .right-content-design {
         flex: 100%;
         flex-direction: row;
     }
 
-    .img-design-right{
+    .img-design-right {
         display: none;
 
     }
 
-    .discover , .your-world{
-        font-size: 2rem ;
+    .discover,
+    .your-world {
+        font-size: 2rem;
     }
 
-    
+
 
 }
 
@@ -200,4 +203,40 @@ figure {
     width: 80%;
     z-index: 200;
     margin-left: 10%;
+}
+
+.c-btnnn {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-left: 10%;
+    position: absolute;
+    font-size: 40%;
+    cursor: pointer;
+    margin-top: 40%;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.last-pic-session {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    z-index: 200;
+    display: flex;
+}
+@media screen and (max-width: 440px) {
+    .last-pic-session{
+        font-size: 1.5rem;
+    }
+    
+    
+    .c-btnnn{
+        height: 50% ;
+    }
 }
