@@ -173,34 +173,6 @@ h2 {
 }
 
 
-@media screen and (min-width: 425px) {
-    .r-footer>* {
-        flex: 1;
-    }
-
-
-    .l-footer {
-        flex: 1 0px;
-    }
-
-    .r-footer {
-        flex: 1 0px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .r-footer>* {
-        flex: 1;
-    }
-
-
-    .l-footer {
-        flex: 2 0px;
-    }
-
-    .r-footer {
-        flex: 2 0px;
-    }
-}
 
 .head {
 
@@ -402,8 +374,7 @@ h2 {
     margin: 0 auto;
     padding: 3px;
     font-weight: 200;
-   
-    position: relative;
+   position: relative;
 }
 
 .your-world{
@@ -425,13 +396,6 @@ h2 {
     top: 0;
     left: 0;
   }
-  
-  
-  
-  
-  
-  
-
   
   
   .video-container:after {
@@ -626,5 +590,44 @@ h2 {
 }
 
 /* mountain*/
+@media screen and (min-width: 425px) {
+    .r-footer>* {
+        flex: 1;
+    }
 
 
+    .l-footer {
+        flex: 1 0px;
+    }
+
+    .r-footer {
+        flex: 1 0px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .r-footer>* {
+        flex: 1;
+    }
+
+
+    .l-footer {
+        flex: 2 0px;
+    }
+
+    .r-footer {
+        flex: 2 0px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .discover{
+        font-size: 2rem;
+
+    }
+
+    .your-world{
+        font-size: 2rem;
+    }
+}
