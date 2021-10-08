@@ -522,8 +522,9 @@ h2 {
   }
 
   .imgg{
-    width: 450px;
+    width: 420px;
     height: 500px;
+    object-fit: cover;
     
 
   }
@@ -629,5 +630,11 @@ h2 {
 
     .your-world{
         font-size: 2rem;
+    }
+}
+@media screen and (max-width: 800px){
+
+    .mountain{
+        height: 100%;
     }
 }
