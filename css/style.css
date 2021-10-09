@@ -40,15 +40,18 @@ body {
 
 .navbar {
     background-color: transparent;
+    padding-top: 40px;
 }
 
-@media screen and (max-width: 500px) {
-
-    .navbar {
-        background-color: black;
-    }
-
+.navbar-nav{
+    margin-left: 45%;
 }
+
+
+
+
+
+
 
 .icon {
     width: 200px;
@@ -667,4 +670,18 @@ video {
     .your-world {
         font-size: 2rem;
     }
+}
+
+@media screen and (max-width: 500px) {
+
+    .navbar {
+        background-color: black;
+    
+    }
+
+    .navbar-nav{
+        margin-left: 0%;
+        height: 100vh;
+    }
+
 }
