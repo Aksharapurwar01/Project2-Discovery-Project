@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+.whole-mid-press{
+    display: grid;
+    grid-template-rows: 1fr ;
+   
+    
+}
+.slides {
+    margin-left: auto;
+    position: relative;
+    max-width: 80%;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+.inner-slides{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 4.5rem 8vw;
+   
+}
+
+@media (min-width: 700px){
+.inner-slides{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+.press-item {
+    transform-origin: left;
+}
+
+.press-item__title{
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: 100;
+    font-size: 2rem;
+   
+  
+}
+
+.press-heading{
+    line-height: 1.4;
+    font-family: 'Spectral', serif;
+    padding-bottom: 4%;
+    margin-left: 11%;
+    padding-top: 5%;
+    
+}
+
+.c-btn--margin {
+    margin-top: 3rem;
+}
+
+.c-press-item__label{
+    color: black;
+    font-weight: 500;
+    font: 2.5rem ;
+}
+
+.c-btn {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 100px 100x;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10%;
+    width: 180px;
+    height:50px;
+  }
+
+ .press-middle {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #f3f3f3;;
+  }
+  .containerr {
+    width: 100%;
+    max-width: 1300px;
+    margin-left: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+  }
+  .left {
+    width: 100%;
+    height: 600px;
+    background: url("../images/press/DJI_0265_RET_2_210405_191033_8cfe90628771654de81065d52a5bfbcf.jpg")
+      no-repeat center / cover;
+    border-radius: 8px;
+    margin-left: 0%;
+  }
+  .right {
+    width: 50%;
+    min-height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: black;
+    margin-left: -150px;
+  }
+  .right h1 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .right p {
+    margin: 20px 0;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+  
+    border-color: black;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .containerr {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+      margin-top: 20%;
+      margin-bottom: 20%;
+    }
+    .left {
+      width: 100%;
+      height: 500px;
+    }
+    .right {
+      width: 90%;
+      margin: 0;
+      margin-top: -250px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+  
+    .right {
+      width: 90%;
+      margin: 0;
+      margin-top: -300px;
+    }
+
+    .left {
+        width: 100%;
+        height: 600px;
+      }
+  }
+  

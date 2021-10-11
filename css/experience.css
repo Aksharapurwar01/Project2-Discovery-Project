@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+.main-exp {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.inner-content {
+    width: 100%;
+
+    padding-top: 10%;
+    padding-bottom: 5%;
+    height: fit-content;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.mid-gray-div {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 23%;
+}
+
+.mid-gray {
+    height: 70%;
+    width: 57%;
+    background-color: lightgray;
+
+}
+
+.p-content {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.mid-white-div {
+    position: absolute;
+    height: fit-content;
+    width: 40vw;
+    background-color: #fff;
+    z-index: 5;
+    margin-top: 5%;
+    padding: 5% 6%;
+}
+
+.mid-white-div>h1 {
+    font-weight: 100;
+}
+
+.mid-white-div>p {
+    color: #777777;
+    line-height: 150%;
+    font-size: 17px;
+    word-spacing: 1px;
+}
+
+.mid-white-div>h3 {
+    border: lightgray 1px solid;
+    text-align: center;
+    padding: 20px 50px;
+    width: fit-content;
+    color: #777777;
+    font-weight: 100;
+    margin-top: 30px;
+
+    cursor: pointer;
+}
+
+.inner-content-img {
+    display: flex;
+}
+
+.inner-content-img>img {
+    width: 75%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.climb {
+    direction: rtl;
+}
+
+.Outdoor-Pursuits {
+    direction: ltr;
+}
+
+.div9-exp {
+    padding-top: 60px;
+    background-color: #f3f3f3;
+    box-sizing: unset;
+}
+
+
+@media screen and (max-width:800px) {
+    .inner-content {
+        padding-bottom: 20vh;
+    }
+
+    .mid-white-div {
+        width: 70%;
+        padding: 4% 4%;
+    }
+
+    .mid-white-div {
+        margin-top: 35%;
+    }
+
+    .inner-content-img>img {
+        width: 95%;
+        height: 30%;
+    }
+
+    .mid-gray {
+        height: 45%;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .inner-content {
+        padding-bottom: 60vh;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .inner-content {
+        padding-bottom: 80vh;
+    }
+}
+
+.c-btnn {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-left: 10%;
+    position: absolute;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 40%;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+}
